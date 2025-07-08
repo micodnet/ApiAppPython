@@ -67,7 +67,7 @@ POST   /api/notes         → Ajoute une note
 PUT    /api/notes/{id}    → Modifie une note
 DELETE /api/notes/{id}    → Supprime une note
 
-⚙️ Lancer le frontend React (si tu en as un)
+⚙️ Lancer le frontend React
 
 cd frontend
 npm install
