@@ -1,0 +1,149 @@
+/* 🌍 Fond général et typographie */
+body {
+    background-color: #f4f7fa !important;
+    font-family: 'Inter', 'Segoe UI', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    color: #2c3e50;
+}
+
+/* 🔝 Barre du haut */
+.swagger-ui .topbar {
+    background-color: #1e2b33 !important;
+    padding: 14px 24px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.swagger-ui .topbar .topbar-wrapper a {
+    color: #ffffff !important;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+/* 📦 Conteneur principal */
+.swagger-ui .wrapper {
+    max-width: 1100px;
+    margin: auto;
+    padding: 30px 20px;
+}
+
+/* 📘 Titres */
+.swagger-ui h2, 
+.swagger-ui h3, 
+.swagger-ui h4 {
+    color: #2c3e50;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+
+/* 🎯 Méthodes d’API – style général */
+.swagger-ui .opblock {
+    border-radius: 10px;
+    margin-bottom: 25px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+    transition: transform 0.2s ease;
+}
+.swagger-ui .opblock:hover {
+    transform: translateY(-2px);
+}
+
+/* 🌈 Couleurs par méthode */
+.swagger-ui .opblock-get {
+    background: #eaf6ff;
+    border-left: 5px solid #1e90ff;
+}
+
+.swagger-ui .opblock-post {
+    background: #fff5e6;
+    border-left: 5px solid #ffa500;
+}
+
+.swagger-ui .opblock-put {
+    background: #e6fff3;
+    border-left: 5px solid #00c47a;
+}
+
+.swagger-ui .opblock-delete {
+    background: #ffecec;
+    border-left: 5px solid #ff4d4d;
+}
+
+/* 🏷️ Tags */
+.swagger-ui .opblock-tag {
+    background: transparent !important;
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+/* 📋 Paramètres */
+.swagger-ui .parameters-col_description {
+    color: #2c3e50;
+    font-size: 0.95rem;
+}
+
+/* 🟢 Bouton Try it out */
+.swagger-ui .btn.try-out__btn {
+    background-color: #00b894 !important;
+    color: white !important;
+    border-radius: 5px;
+}
+.swagger-ui .btn.try-out__btn:hover {
+    background-color: #009170 !important;
+}
+
+/* 🔵 Bouton Execute */
+.swagger-ui .btn.execute {
+    background-color: #3498db !important;
+    color: white !important;
+    border: none;
+    border-radius: 5px;
+}
+
+/* 🟥 Bouton Cancel */
+.swagger-ui .btn.cancel {
+    background-color: #e74c3c !important;
+    color: white !important;
+    border-radius: 5px;
+}
+.swagger-ui .btn.cancel:hover {
+    background-color: #c0392b !important;
+}
+
+/* 🔳 Résultat JSON / code block */
+.swagger-ui pre {
+    background-color: #f9f9f9 !important;
+    color: #1e1e1e !important;
+    border-radius: 8px;
+    padding: 15px !important;
+    font-size: 0.9rem;
+}
+
+/* 📄 Réponses */
+.swagger-ui .response-col_description,
+.swagger-ui .response-col_status {
+    color: #333;
+    font-size: 0.95rem;
+}
+
+/* 🖱️ Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #f0f0f0;
+}
+::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+}
+
+/* 📱 Responsive (mobile) */
+@media screen and (max-width: 768px) {
+    .swagger-ui .wrapper {
+        padding: 15px;
+    }
+
+    .swagger-ui .topbar .topbar-wrapper a {
+        font-size: 1.2rem;
+    }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modifier la note</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 1em;
+            background: #f2f2f2;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        form {
+            margin-top: 2rem;
+            padding: 1rem;
+            background: #eef;
+            border-radius: 5px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+        button {
+            padding: 10px 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Modifier la note</h1>
+    <form action="/modifier-note" method="post">
+        <input type="hidden" name="note_id" value="{{ note['id'] }}">
+        <label for="titre">Titre :</label><br>
+        <input type="text" id="titre" name="titre" value="{{ note['titre'] }}" required minlength="3"><br><br>
+
+        <label for="contenu">Contenu :</label><br>
+        <textarea id="contenu" name="contenu" rows="4" required minlength="5">{{ note['contenu'] }}</textarea><br><br>
+
+        <button type="submit">✅ Enregistrer</button>
+        <a href="/affichage">Annuler</a>
+    </form>
+</body>
+</html>
